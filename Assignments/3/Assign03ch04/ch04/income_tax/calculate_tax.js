@@ -30,25 +30,24 @@ function calculateTax(income){
         taxableAmount = 0 + income*10/100;
     }
     else if(income <= 37650){
-        taxableAmount = 927.50 + income*15/100;
+        taxableAmount = 927.50 + (income - 9275)*15/100;
     }
     else if(income <= 91150){
-        taxableAmount = 5183.75 + income*25/100;
+        taxableAmount = 5183.75 + (income - 37650)*25/100;
     }
     else if(income <= 190150){
-        taxableAmount = 18558.75 + income*28/100;
+        taxableAmount = 18558.75 + (income - 91150)*28/100;
     }
     
     else if(income <= 413350){
-        taxableAmount = 46278.75 + income*33/100;
+        taxableAmount = 46278.75 + (income - 190150)*33/100;
     }
     
     else if(income <= 415050){
-        taxableAmount = 119934.75 + income*35/100;
+        taxableAmount = 119934.75 + (income - 413350)*35/100;
     }
-    
     else{
-        taxableAmount = 120529.75 + income*39.6/100;
+        taxableAmount = 120529.75 + (income - 415050)*39.6/100;
     }
     taxableAmount = taxableAmount.toFixed(2); // setting the two decimal place
     $("tax").value = taxableAmount; // setting the tax field
