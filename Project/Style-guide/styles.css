@@ -1,0 +1,41 @@
+*{
+    font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+
+.single-color{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+section.container{
+    margin-top: 100px;
+}
+
+.dark-grey{
+    background-color: #242424;
+}
+.red{
+    background-color:darkred;
+}
+.light{
+    background-color:azure;
+}
+.grey{
+    background-color: grey;
+}
+
+#images img{
+    width: 100%;
+}
+
+@media (max-width: 576px){
+    .col-xs-4{
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+}
