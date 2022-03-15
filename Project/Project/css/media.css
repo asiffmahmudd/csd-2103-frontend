@@ -1,0 +1,34 @@
+.video{
+    text-align: center;
+}
+
+video{
+    height: auto;
+    max-width: 100%;
+    margin-top: 0.5em;
+}
+
+.sound{
+	text-align: center;
+}
+
+.sound audio{
+    max-width: 100%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 620px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    video{
+        max-width: 49%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 991px) {
+    
+}

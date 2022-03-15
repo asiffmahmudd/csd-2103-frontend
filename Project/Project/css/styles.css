@@ -1,0 +1,434 @@
+/* ---------------Common styles------------------- */
+
+body, *{
+    margin: 0;
+    padding: 0;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+body{
+    background-color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #242424;
+}
+
+.mt-05{
+    margin-top: 0.5em;
+}
+
+.m-1{
+    margin: 1em;
+}
+
+.p-1{
+    padding: 1em;
+}
+
+.mt-1{
+    margin-top: 1em;
+}
+
+.mt-2{
+    margin-top: 2em;
+}
+
+.mt-3{
+    margin-top: 3em;
+}
+
+.mb-1{
+    margin-bottom: 1em;
+}
+
+.mb-05{
+    margin-bottom: 0.5em;
+}
+
+.ml-1{
+    margin-left: 1em;
+}
+
+.ml-2{
+    margin-left: 2em;
+}
+
+.pt-05{
+    padding-top: 0.5em;
+}
+
+.pt-1{
+    padding-top: 1em;
+}
+
+.pb-1{
+    padding-bottom: 1em !important;
+}
+
+.pb-05{
+    padding-bottom: 0.5em;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-33{
+    width: 33.33%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.rounded{
+    border-radius: 4px;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+}
+
+.rounded-lg{
+    border-radius: 7px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.text-dark{
+    color: #242424;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.bg-dark{
+    background-color: #242424;
+}
+
+.bg-light{
+    background-color: rgb(248,248,255);
+}
+
+.text-light{
+    color: rgb(248,248,255);
+}
+
+.div-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#container{
+    width: 100%;
+}
+
+.page-cover{
+    position: relative;
+}
+
+.page-cover-img{
+    width: 100%;
+    max-height: 350px;
+}
+
+.page-title-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title{
+    text-align: center;
+    position: absolute;
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+/* ----------------------------header------------------------------*/
+
+header .logo{
+    display: block;
+    width: 200px !important;
+}
+
+.dropdown:hover .dropdown-options{
+    display: block;
+}
+
+.dropdown-options{
+    display: none;
+}
+
+.dropdown-options ul{
+    border: 2px solid #242424;
+}
+
+nav{
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul.nav-option-container li{
+    padding: 10px;
+    background-color: #242424;
+    text-align: center;
+    margin-top: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul.nav-option-container li{
+    font-weight: bold;
+    color: rgb(248,248,255);
+}
+
+nav ul.nav-option-container li:hover {
+    background-color: rgb(1,1,1, 0.08);
+}
+
+nav ul.nav-option-container li:hover, nav ul.nav-option-container li:hover a{
+    color: #242424;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+/*---------------------------main ------------------------------*/
+
+.cover-img{
+    width: 100%;
+    max-height: 450px;
+}
+
+.cover-container{
+    position: relative;
+}
+
+.cover-text{
+    font-size: 1em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 80%;
+    text-align: left;
+    color: rgb(248,248,255);
+}
+
+
+.welcome-item img{
+    max-height: 300px;
+}
+
+.welcome-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-item .item{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.section-title{
+    font-size: 30px;
+}
+
+.welcome-item.item-2{
+    flex-direction: column-reverse;
+}
+
+.welcome-item img{
+    max-width: 100%;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 50%;
+}
+
+.card .item{
+    margin: 0.5em;
+    padding: 1em;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card .item:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.featured .card-img{
+    height: 150px;
+}
+
+main{
+    padding: 1em;
+}
+
+legend{
+    font-size: 20px;
+}
+
+/*------------------- footer -------------------*/
+
+footer{
+    background-color: rgb(248,248,255);
+    padding: 2em;
+    text-align: center;
+    font-size: 11px;
+}
+
+.desktop{
+    display: none;
+}
+
+.tablet{
+    display: none;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cover-img{
+        max-height: 480px;
+        width: 100%;
+    }
+    .cover-text{
+        font-size: 1.5em;
+    }
+    .welcome-item{
+        display: flex;
+        flex-direction: row;
+    }
+    .welcome-item .item{
+        width: 50%;
+    }
+    .welcome-item.item-2{
+        flex-direction: row;
+        text-align: right;
+    }
+    .card{
+        width: 33.33%;
+    }
+    .featured .card-img{
+        height: 190px;
+    }
+    main{
+        padding: 1em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .cover-img{
+        max-height: 500px;
+    }
+    .cover-text{
+        font-size: 1.7em;
+    }
+    main{
+        padding: 2em;
+    }   
+    .tablet{
+        display: block;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .desktop{
+        display: block;
+    }
+    .top-header{
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        margin-top: 0.8em;
+    }
+
+    nav ul.nav-option-container li{
+        padding: 10px 15px;
+        background-color: #242424;
+        text-align: center;
+        margin: 0.5em;
+        border-radius: 4px;
+    }
+
+    nav ul .dropdown{
+        position: relative;
+    }
+    nav ul .dropdown-options{
+        position: absolute;
+        top: 40px;
+        right: 10px;
+        z-index: 1000;
+        width: 150px;
+        background: rgba(255, 255, 255, 0.7);
+        text-align: center;
+    }
+
+    .welcome-item{
+        display: flex;
+        flex-direction: row;
+    }
+    .welcome-item .item{
+        width: 50%;
+    }
+    .welcome-item.item-2{
+        flex-direction: row;
+        text-align: right;
+    }
+
+    .cover-img{
+        max-height: 550px;
+    }
+    .cover-text{
+        font-size: 2em;
+    }
+
+    .card{
+        width: 25%;
+    }
+    .featured .card-img{
+        height: 250px;
+    }
+    main{
+        padding: 2em;
+    }
+}

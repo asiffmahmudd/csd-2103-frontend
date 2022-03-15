@@ -1,0 +1,125 @@
+.contact-details .card .item{
+    background-color: ghostwhite;
+    min-height: 70px;
+}
+
+.contact .card {
+    width: 100%;
+}
+
+.contact .card-container{
+    justify-content: center;
+}
+
+input[type=text], input[type=password], input[type=email], textarea, input[type=number], input[type=date], select {
+    width: 100%;
+    padding: 10px 18px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid rgb(179, 177, 177);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+.contact form button, .contact form button{
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.contact form button:hover, .contact form button:hover {
+    background-color: rgba(162, 162, 170, 0.274);
+    color: black;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+form{
+    background-color: ghostwhite;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+label{
+    font-weight: bold;
+}
+
+.contact form .form-control ul{
+    list-style: none;
+}
+
+.contact form .form-control ul li input{
+    margin-right: 5px;
+}
+
+.contact form .form-control ul li:first-child{
+    margin-left: 0;
+}
+
+.required-msg{
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border-color: #80808038;
+    background-color: ghostwhite;
+    border-radius: 1em;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 620px) {
+    .contact .card {
+        width: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .contact .card {
+        width: 50%;
+    }
+    .contact form .form-control ul li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .form-container {
+        display: flex;
+        justify-content: center;
+    }
+    form {
+        width: 550px;
+    }
+    .contact h2{
+        text-align: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 991px) {
+    .contact .card {
+        width: 33.33%;
+    }
+    .contact form .form-control ul li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .form-container {
+        display: flex;
+        justify-content: center;
+    }
+    form {
+        width: 550px;
+    }
+    .contact h2{
+        text-align: center;
+    }
+}

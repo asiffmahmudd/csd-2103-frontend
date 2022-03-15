@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="http://12.42.204.30:7005/jTable/jquery.jtable.js"></script>
+<script src="http://12.42.204.30:7005/jTable/helpers.js"></script>
+<link href="http://12.42.204.30:7005/jTable/themes/lightcolor/red/jtable.css" rel="stylesheet">
+
+<!--
+<link href="http://12.42.204.30:7005/jTable/themes/lightcolor/gray/jtable.css" rel="stylesheet">
+<link href="http://12.42.204.30:7005/jTable/themes/lightcolor/green/jtable.css" rel="stylesheet">
+<link href="http://12.42.204.30:7005/jTable/themes/lightcolor/orange/jtable.css" rel="stylesheet">
+<link href="http://12.42.204.30:7005/jTable/themes/lightcolor/blue/jtable.css" rel="stylesheet">
+<link href="http://12.42.204.30:7005/jTable/themes/metro/lightgray/jtable.css" rel="stylesheet">
+<link href="http://12.42.204.30:7005/jTable/themes/metro/red/jtable.css" rel="stylesheet">
+-->
+
+                                                <!-- Do not change the code above -->
+
+<link href="css/web4.css" rel="stylesheet">     <!-- Modify myStyles.css to add additional styles or add your own stylesheet-->
+<link rel="stylesheet" href="css/styles.css">
+<title>Drills</title>                             <!-- Modify title for your application -->
+
+<script>
+	$(document).ready(function() {
+		$('#container1').jtable({
+			title : 'Product Inventory',              <!-- Change title for the output -->
+			paging : true,                      <!-- "true" allows paging through the grid -->
+			pageSize : 8,                      <!-- Specify page size -->
+			sorting : true,                     <!-- "true" allows sorting by columns -->
+			defaultSorting : 'product_name, product_inventory_value DESC', <!-- Default sort column(s) on initial load -->
+			actions : {
+				listAction : 'genJson2.aspx?jtView=WEB4V'  <!-- Change "carsV1" to your view name -->
+			},
+			fields : {                          <!-- Modify the grid components -->
+				product_id : {
+					title : 'Product ID',
+					width : '20%',
+					list : true
+				},
+				product_name : {
+					title : 'Product Name',
+					width : '20%',
+					list : true
+				},
+				product_inventory_value : {
+					title : 'Inventory Value',
+					width : '10%',
+					list : true
+				}
+				/*cost_price : {
+					title : 'Cost price',
+					width : '15%',
+					list : true,
+					display : function(data) {
+						return formatCurrency(data.record.cost_price)
+					},
+				}*/
+			}
+		});                                     <!-- Do not change the code below -->
+		$('#container1').jtable('load');
+	});
+</script>
+</head>
+
+<body>
+	<header>
+		<div class="top-header">
+			<div>
+				<a href="index.html">
+					<img class="logo div-center mt-1" src="images/logo.png" alt="Logo">
+				</a>
+			</div>
+
+			<nav class="p-1">
+				<ul class="nav-option-container">
+					<a href="about.html"><li>About</li></a>
+					<a href="team.html"><li>Our Team</li></a>
+					<a href="specials.html"><li>Specials</li></a>
+					<a href="training.html"><li>Training</li></a>
+					<a href="media.html"><li>Media</li></a>
+					<a href="contact.html"><li>Contact</li></a>
+					<div class="dropdown"><li>Reports</li></a>
+						<ul class="dropdown-options">
+							<a href="web1.html"><li>WEB 1</li></a>
+							<a href="web2.html"><li>WEB 2</li></a>
+							<a href="web3.html"><li>WEB 3</li></a>
+							<a href="web4.html"><li>WEB 4</li></a>
+						</ul>
+					</div>
+				</ul>
+			</nav>
+		</div>
+	</header>
+  	<div id="container1"></div>
+  	<footer class="mt-1">
+		<p>&copy; Copyright 2099. All Rights Reserved.<br>
+		Request information<br>
+		Asif Mahmud &nbsp; &nbsp; C0837117</p>
+	</footer>
+</body>
+</html>

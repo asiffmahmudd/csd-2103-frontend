@@ -1,0 +1,59 @@
+
+.training .card-img{
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 620px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 991px) {
+    /* Style for table element */
+    table{
+        border: 0.1em solid #857b7b;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    /* Style specifies border and padding for th and td elements */
+    th,td{
+        border: 0.1em solid #857b7b;
+        padding: 1em; 
+    }
+
+    /* Style for th element */
+    th{
+        background-color: #242424;
+        color: #FFFFFF;
+    }
+
+    /* Style for caption element */
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+
+    .training-schedule tr:nth-child(odd){
+        background-color: ghostwhite;
+    }
+
+    .training-schedule tr:hover{
+        background-color: rgba(128, 128, 128, 0.336);
+    }
+    .mobile{
+        display: none;
+    }
+}
