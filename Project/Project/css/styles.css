@@ -208,15 +208,15 @@ nav ul.nav-option-container li{
     color: rgb(248,248,255);
 }
 
-nav ul.nav-option-container li:hover {
+/* nav ul.nav-option-container li:hover {
     background-color: rgb(1,1,1, 0.08);
-}
+} */
 
-nav ul.nav-option-container li:hover, nav ul.nav-option-container li:hover a{
+/* nav ul.nav-option-container li:hover, nav ul.nav-option-container li:hover a{
     color: #242424;
     font-style: italic;
     cursor: pointer;
-}
+} */
 
 
 /*---------------------------main ------------------------------*/

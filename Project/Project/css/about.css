@@ -19,9 +19,8 @@ hr{
     display: none;
 }
 
-.hide{
-    display: none;
-    transition: display 2s ease-in 2s;
+.section-para{
+    position: relative;
 }
 
 .expand-collapse{

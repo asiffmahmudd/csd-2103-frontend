@@ -8,7 +8,10 @@
         <title>Nitro Drills</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/loadJson.js"></script>
+        <script src="js/menuPlugin.js"></script>
         <script src="js/script.js"> </script>
+
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/team.css">
     </head>
@@ -30,7 +33,7 @@
                             <a href="training.html"><li>Training</li></a>
                             <a href="media.html"><li>Media</li></a>
                             <a href="contact.html"><li>Contact</li></a>
-                            <div class="dropdown"><li>Reports</li></a>
+                            <div class="dropdown"><li id="reports">Reports</li>
                                 <ul class="dropdown-options">
                                     <a href="web1.html"><li>WEB 1</li></a>
                                     <a href="web2.html"><li>WEB 2</li></a>
@@ -102,7 +105,13 @@
                             </aside>
                         </div>
                     </section>
+
+                    
                 </article>
+
+                <div class="mt-2 team-list">
+                    
+                </div>
                 
                 <h2 class="mt-2 mb-1">Gallery</h2>
                 <div class="gallery">
