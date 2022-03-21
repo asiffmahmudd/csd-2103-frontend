@@ -1,0 +1,12 @@
+/* slide_show.js */
+$(document).ready(function(){
+	// create and array of images
+	var image, imageCounter = 0, imageCache = [];
+	$("#slides img").each(function(){
+		image = new Image();
+		image.src = $(this).attr("src");
+		image.title = $(this).attr("alt");
+		imageCache[imageCounter] = image;
+		imageCounter++;
+	}); // end preload
+}); // end of ready
