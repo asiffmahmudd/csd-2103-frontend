@@ -60,6 +60,9 @@ video{
     .photo-item {
         width: 48%;
     }
+    .photo-item img{
+        max-height: 200px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -70,11 +73,17 @@ video{
     .photo-item {
         width: 32%;
     }
+    .photo-item img{
+        max-height: 200px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 991px) {
     .photo-item {
         max-width: 24%;
+    }
+    .photo-item img{
+        max-height: 200px;
     }
 }
