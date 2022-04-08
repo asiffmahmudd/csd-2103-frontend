@@ -16,9 +16,50 @@ video{
     max-width: 100%;
 }
 
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search input{
+    min-height: auto;
+    padding: 0.33em 0.75em;
+    border-radius: 5px 0 0 5px;
+    background: transparent;
+    transition: all .2s linear;
+}
+
+#search-btn{
+    background-color: #0d6efd;
+    padding: 0 10px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    cursor: pointer;
+}
+
+#search-btn:hover{
+    background-color: #2d7df4;
+}
+
+.photo-item img{
+    width: 100%;
+}
+
+.photo-item{
+    margin-bottom: 15px;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 620px) {
-    
+    #photos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .photo-item {
+        width: 48%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -26,9 +67,14 @@ video{
     video{
         max-width: 49%;
     }
+    .photo-item {
+        width: 32%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 991px) {
-    
+    .photo-item {
+        max-width: 24%;
+    }
 }

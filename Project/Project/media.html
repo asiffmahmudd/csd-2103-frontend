@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/menuPlugin.js"></script>
+        <script src="js/searchPhotos.js"></script>
         <script src="js/script.js"> </script>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/team.css">
@@ -54,6 +55,13 @@
             </header>
 
             <main>
+                <h2 class="mt-2 mb-1">Search for photos from Flickr</h2>
+                <div class="search">
+                    <input id="search-text" type="text">
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="mt-2" id="photos"></div>
+
                 <h2 class="mt-2 mb-1">Gallery</h2>
                 <div class="gallery">
                     <figure class="text-center">
@@ -68,18 +76,18 @@
 
                 <h2 class="mt-2">Video Gallery</h2>
                 <div class="video">
-                    <video autoplay controls>
+                    <video controls>
                         <source src="media/video1.mp4" type="video/mp4">
                         <p>Your browser does not support the video tag.</p>
                     </video>
-                    <video autoplay controls>
+                    <video  controls>
                         <source src="media/video2.mp4" type="video/mp4">
                         <p>Your browser does not support the video tag.</p>
                     </video>
                 </div>
 
                 <div class="sound mt-2">
-                    <audio autoplay controls>
+                    <audio controls>
                         <source src="media/audio.mp3" type="audio/mp3">
                         <p>Your browser does not support the audio tag.</p>
                     </audio>
